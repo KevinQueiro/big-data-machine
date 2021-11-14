@@ -9,7 +9,7 @@ const Home = () => {
 
 const handleLogOut = () => {
   sessionStorage.setItem('active',false);
-  window.location.reload();
+  window.location.replace('/');
 }
 
   return (
