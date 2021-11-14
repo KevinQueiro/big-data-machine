@@ -6,9 +6,16 @@ import Dashboard from "./Dashboard";
 
 const Home = () => {
   IsLoged();
+
+const handleLogOut = () => {
+  sessionStorage.setItem('active',false);
+  window.location.reload();
+}
+
   return (
     <div>
       <Dashboard />
+      <button onClick={handleLogOut}>logOut</button>
     </div>
   );
 };

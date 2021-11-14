@@ -1,4 +1,5 @@
 const parseDate = (apiDate) => {
+    console.log(apiDate);
     let dataDate = apiDate.split('T')[0]
     let date = dataDate.split('-').join('')
     return date;
